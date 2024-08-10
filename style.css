@@ -1,7 +1,7 @@
 /* create a main mainContainer*/
 .mainContainer {
   /* border: 5px solid aqua; */
-  margin: auto;   
+  margin: auto;
   width: 90%; /* Ensures .main takes up the full width of its container  */
   flex-direction: column; /* force main container's box 1, box,2 ,box 3 to be arranged in columns */
 }
@@ -10,7 +10,7 @@
   /* border: 5px solid blue; */
   flex: 1; /* Forces .section1 to occupy 100% of the .mainContainer width */
   display: flex;
-  flex-wrap: wrap; /* wraps to next line */  
+  flex-wrap: wrap; /* wraps to next line */
 }
 
 .boxes {
@@ -20,7 +20,7 @@
 
 #box1 {
   display: flex; /* flex photo and nameRole */
-  flex: 1 1 65%; /*box 1 occupies 65% of the containing section1*/ 
+  flex: 1 1 65%; /*box 1 occupies 65% of the containing section1*/
 }
 #box2 {
   /* display:flex; */
@@ -42,7 +42,6 @@
   padding: 10px;
 }
 img#photo {
-  
   height: 200px;
   width: 200px;
 }
@@ -75,7 +74,8 @@ div#nameAndRole {
 }
 #section3 {
   background: white;
-  flex: 1 1 60%;  margin: 5px;
+  flex: 1 1 60%;
+  margin: 5px;
 }
 
 /* style the details of elements (text, photo, etc)*/
@@ -91,7 +91,6 @@ div#nameAndRole {
 }
 
 .line {
-  border: 5px solid gray;
-  color: gray
-  height:gray;;;
+  border: 5px solid lightgray;
+  height: 0.1px;
 }
