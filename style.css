@@ -3,26 +3,27 @@
   /* border: 5px solid aqua; */
   margin: auto;
   width: 90%; /* Ensures .main takes up the full width of its container  */
-  flex-direction: column; /* force main container's box 1, box,2 ,box 3 to be arranged in columns */
 }
 
 .section1 {
-  /* border: 5px solid blue; */
+  border: 15px solid rgb(219, 244, 29);
   flex: 1; /* Forces .section1 to occupy 100% of the .mainContainer width */
   display: flex;
   flex-wrap: wrap; /* wraps to next line */
 }
 
 .boxes {
-  /* border: 5px solid green;    */
+  border: 5px solid green;
   box-sizing: border-box; /* Ensures padding and border are included in width */
 }
 
 #box1 {
+  border: 2px solid blue;
   display: flex; /* flex photo and nameRole */
   flex: 1 1 65%; /*box 1 occupies 65% of the containing section1*/
 }
 #box2 {
+  border: 2px solid blue;
   /* display:flex; */
   flex: 1 1 35%; /*box 2 occupies 35% of the containing section1*/
 }
@@ -32,6 +33,7 @@
 }
 
 #box3 {
+  border: 2px solid blue;
   flex: 1; /*box 3 occupies 100% of the containing section1*/
 }
 
