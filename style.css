@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 /* create a main mainContainer*/
 .mainContainer {
   /* border: 5px solid aqua; */
@@ -6,44 +9,81 @@
 }
 
 .section1 {
-  border: 15px solid rgb(219, 244, 29);
+  /* border: 5px solid rgb(219, 244, 29); */
+  border-radius: 12px;
   flex: 1; /* Forces .section1 to occupy 100% of the .mainContainer width */
   display: flex;
   flex-wrap: wrap; /* wraps to next line */
 }
 
 .boxes {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   box-sizing: border-box; /* Ensures padding and border are included in width */
 }
 
-#box1 {
-  border: 2px solid blue;
+div#box1.boxes {
+  margin: 40px 0 0 0;
+  border: 5px solid lightgray;
+  border-radius: 10px;
   display: flex; /* flex photo and nameRole */
-  flex: 1 1 65%; /*box 1 occupies 65% of the containing section1*/
+  flex: 1 1 30%; /*box 1 occupies 65% of the containing section1*/
+  width: 100%;
+  /* margin: 20px; */
 }
+
 #box2 {
-  border: 2px solid blue;
-  /* display:flex; */
-  flex: 1 1 35%; /*box 2 occupies 35% of the containing section1*/
+  height: 25vh;
 }
+
+div#box2.boxes {
+  margin: 40px 0 0 0;
+
+  /* border: 2px solid blue; */
+  /* display:flex; */
+  flex: 1 1 40%; /*box 2 occupies 35% of the containing section1*/
+}
+
+/*contact grid*/
 .boxContact {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Calibri";
+  text-decoration: underline;
   padding: 15px;
 }
-
-#box3 {
-  border: 2px solid blue;
-  flex: 1; /*box 3 occupies 100% of the containing section1*/
+.gridContact {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  gap: 10px;
+}
+.gridContact {
+  grid-template-columns: 150px 1fr;
+}
+.gridContactItem {
+  font-size: 22px;
 }
 
+/*executive summary */
+#box3 {
+  /* border: 2px solid blue; */
+  flex: 1 1 31%; /*box 3 occupies 100% of the containing section1 as it exceeded total of box1 + box2 + box3 = 101% by 1%*/
+}
+/* boxLine3 is inside parent section1 container display: flex
+  Use flex: 1 1 100% to make it horizontal.
+*/
+.box3Line {
+  flex: 1 1 100%;
+  border: 5px solid lightgray;
+  margin: 20px auto;
+}
 /* controls within box1 */
 .box1Content {
   /* border: 5px solid magenta; */
-  margin: 5px;
   padding: 10px;
 }
 img#photo {
+  background-color: rgb(7, 132, 215);
+  border-radius: 50%;
   height: 200px;
   width: 200px;
 }
@@ -53,31 +93,53 @@ div#nameAndRole {
 /* controls within box2 */
 .box2Content {
   /* border: 5px solid magenta; */
-  margin: 5px;
   padding: 10px;
 }
 /* controls within box3 */
 .box3Content {
   /* border: 5px solid magenta; */
-  margin: 5px;
-  padding: 10px;
 }
-
-/* section23 */
+.executiveSummary {
+  margin: 20px;
+  text-decoration: underline;
+}
+.summary {
+  margin: 20px;
+  font-family: "Calibri";
+  font-size: 20px;
+}
+/* section23 
+section23 is flex container with section2 and section3
+control the occupied space of section2 and section3 using flex: 1 1 xx%
+*/
 .section23 {
-  /* border: 1em solid blue; */
+  margin: 0 0 10em 0;
+  /* border: 1px solid blue; */
   display: flex;
-  margin: 1em;
+  flex-wrap: wrap; /* wraps to next line */
+  /* margin: 1em; */
   justify-content: space-between;
 }
-#section2 {
-  flex: 1 1 40%;
-  margin: 5px;
+.education {
+  margin: 20px;
+  text-decoration: underline;
 }
+/* section2 is inside container section23 is using flex-wrap:wrap to wrap its children
+section2 must used width: 100% so it stays inside container23 when resizing.
+*/
+#section2 {
+  /* border: 5px solid lightgray; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  flex: 1 1 50%;
+}
+
 #section3 {
+  margin: 20px;
+  /* border: 5px solid lightgray; */
+  flex: 1 1 40%;
   background: white;
-  flex: 1 1 60%;
-  margin: 5px;
 }
 
 /* style the details of elements (text, photo, etc)*/
@@ -94,5 +156,110 @@ div#nameAndRole {
 
 .line {
   border: 5px solid lightgray;
-  height: 0.1px;
+  margin: 20px auto;
+}
+
+/* grid school, schoolData */
+.gridSchool {
+  margin: 20px;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+.gridSchoolData {
+  /* outline: 5px solid blue; */
+  font-family: "Calibri";
+  font-size: 22px;
+}
+.gridSchoolData:nth-child(3) {
+  grid-column: 1/-1;
+}
+
+/* skills*/
+.skills {
+  margin: 20px;
+  text-decoration: underline;
+}
+
+.gridContainer {
+  margin: 20px;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
+
+  /* border: 5px solid gray; */
+  gap: 10px;
+}
+.gridItem {
+  /* outline: 1px solid blue; */
+  font-size: 20px;
+}
+.gridItem:nth-child(15) {
+  grid-column: 2/-1;
+}
+
+.gridSchoolData:nth-child(2),
+.gridSchoolData:nth-child(5),
+.gridSchoolData:nth-child(7),
+.gridContainer .gridItem:nth-child(4n + 1),
+.gridContainer .gridItem:nth-child(4n + 3),
+.gridCertItem:nth-child(3n + 2),
+.gridCertItem:nth-child(3n + 3),
+.gridWorkItem:nth-child(1),
+.gridWorkItem:nth-child(4),
+.gridWorkItem:nth-child(7),
+.gridWorkItem:nth-child(10),
+.gridWorkItem:nth-child(13) {
+  font-weight: bold;
+}
+
+/* certifications , badges*/
+.certifications {
+  text-decoration: underline;
+  margin: 20px;
+}
+.gridCert {
+  margin: 20px;
+
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+.gridCertItem {
+  /* outline: 1px solid blue; */
+  font-size: 20px;
+}
+
+/* Work experience */
+.workExperience {
+  text-decoration: underline;
+}
+
+.gridWork {
+  margin: 20px 0 0 0;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(15, auto);
+}
+/* set row 1, column 1 to 200px, 1fr takes up remaining space*/
+.gridWork {
+  grid-template-columns: 370px 1fr;
+}
+.gridWorkItem {
+  /* outline: 1px solid blue; */
+  font-size: 22px;
+}
+
+.gridWorkItem:nth-child(3),
+.gridWorkItem:nth-child(6),
+.gridWorkItem:nth-child(9),
+.gridWorkItem:nth-child(12),
+.gridWorkItem:nth-child(15) {
+  grid-column: 1/-1;
 }
