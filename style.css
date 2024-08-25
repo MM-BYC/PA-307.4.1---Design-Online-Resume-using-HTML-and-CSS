@@ -215,9 +215,9 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   /* outline: 1px solid blue; */
   font-size: 20px;
 }
-.gridItem:nth-child(15) {
+/* .gridItem:nth-child(15) {
   grid-column: 2/-1;
-}
+} */
 
 .gridSchoolData:nth-child(2),
 .gridSchoolData:nth-child(5),
