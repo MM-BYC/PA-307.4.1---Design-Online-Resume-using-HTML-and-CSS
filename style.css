@@ -76,7 +76,8 @@ div#box2.boxes {
   border: 5px solid lightgray;
   margin: 20px auto;
 }
-/* controls within box1 */
+
+/*** controls within box1 ***/
 .box1Content {
   /* border: 5px solid magenta; */
   padding: 10px;
@@ -87,9 +88,38 @@ img#photo {
   height: 200px;
   width: 200px;
 }
-div#nameAndRole {
-  flex: 1;
+
+.gridNameRole {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(5, min-content);
+  /* grid-template-rows: min-content; */
+  /* grid-auto-rows: auto; */
+  /* grid-auto-flow: row; */
+  /*align-items: center; aligns grid bottom to the end
+  /* grid-row-gap: 0; */
+  /* border: 5px solid red; */
 }
+.gridNameRole > div:nth-child(1) {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.gridNameRole > div:nth-child(n + 2) {
+  font-size: 2em;
+  font-weight: normal;
+  color: rgb(7, 132, 215);
+}
+
+.gridNameRoleItem {
+  margin-bottom: 0;
+  /* outline: 2px solid magenta; */
+  padding: 5px;
+}
+
+/* style the details of elements (text, photo, etc)*/
+
 /* controls within box2 */
 .box2Content {
   /* border: 5px solid magenta; */
@@ -140,18 +170,6 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   /* border: 5px solid lightgray; */
   flex: 1 1 40%;
   background: white;
-}
-
-/* style the details of elements (text, photo, etc)*/
-#name {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 3em;
-  font-weight: bold;
-}
-#role {
-  font-size: 2em;
-  font-weight: normal;
-  color: rgb(7, 132, 215);
 }
 
 .line {
