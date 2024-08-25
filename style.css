@@ -32,7 +32,7 @@ div#box1.boxes {
 }
 
 #box2 {
-  height: 25vh;
+  height: 40vh;
 }
 
 div#box2.boxes {
@@ -232,7 +232,7 @@ section2 must used width: 100% so it stays inside container23 when resizing.
 }
 .gridCertItem {
   /* outline: 1px solid blue; */
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /* Work experience */
