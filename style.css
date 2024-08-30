@@ -216,11 +216,11 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   grid-template-columns: repeat(4, auto);
   grid-template-rows: repeat(5, auto);
 
-  /* border: 5px solid gray; */
+  /* border: 5px solid magenta; */
   gap: 10px;
 }
 .gridItem {
-  /* outline: 1px solid blue; */
+  /* outline: 3px solid blue; */
   font-size: 20px;
 }
 /* .gridItem:nth-child(15) {
