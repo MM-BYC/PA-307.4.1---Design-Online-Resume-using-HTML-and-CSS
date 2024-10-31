@@ -36,11 +36,12 @@ div#box1.boxes {
 }
 
 div#box2.boxes {
-  margin: 40px 0 0 0;
+  margin: 22px 0 0 0;
 
   /* border: 2px solid blue; */
   /* display:flex; */
   flex: 1 1 40%; /*box 2 occupies 35% of the containing section1*/
+  height: auto;
 }
 
 /*contact grid*/
@@ -50,7 +51,7 @@ div#box2.boxes {
   padding: 15px;
 }
 .gridContact {
-  margin: 15px;
+  margin: 10px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(5, auto);
