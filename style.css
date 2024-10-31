@@ -209,7 +209,7 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   text-decoration: underline;
 }
 
-.gridContainer {
+.gridTechSkills {
   margin: 20px;
   display: grid;
   box-sizing: border-box;
@@ -219,19 +219,19 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   /* border: 5px solid magenta; */
   gap: 10px;
 }
-.gridItem {
+.gridTechSkillsItem {
   /* outline: 3px solid blue; */
   font-size: 20px;
 }
-/* .gridItem:nth-child(15) {
+/* .gridTechSkillsItem:nth-child(15) {
   grid-column: 2/-1;
 } */
 
 .gridSchoolData:nth-child(2),
 .gridSchoolData:nth-child(5),
 .gridSchoolData:nth-child(7),
-.gridContainer .gridItem:nth-child(4n + 1),
-.gridContainer .gridItem:nth-child(4n + 3),
+.gridTechSkills .gridTechSkillsItem:nth-child(4n + 1),
+.gridTechSkills .gridTechSkillsItem:nth-child(4n + 3),
 .gridCertItem:nth-child(3n + 2),
 .gridCertItem:nth-child(3n + 3),
 .gridWorkItem:nth-child(1),
@@ -257,6 +257,24 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   gap: 10px;
 }
 .gridCertItem {
+  /* outline: 1px solid blue; */
+  font-size: 22px;
+}
+
+/* Portfolio */
+.portfolios {
+  margin: 20px;
+  text-decoration: underline;
+}
+.gridPortfolio {
+  margin: 20px;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+.gridPortfolioItem {
   /* outline: 1px solid blue; */
   font-size: 22px;
 }
