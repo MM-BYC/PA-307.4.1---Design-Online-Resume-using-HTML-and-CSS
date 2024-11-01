@@ -28,7 +28,7 @@ div#box1.boxes {
   border-radius: 10px;
   display: flex; /* flex photo and nameRole */
   flex: 1 1 30%; /*box 1 occupies 65% of the containing section1*/
-  width: 100%;
+  max-width: 100%;
   /* margin: 20px; */
 }
 
