@@ -271,7 +271,7 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   margin: 20px;
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(4, auto);
   gap: 10px;
 }
