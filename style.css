@@ -27,7 +27,7 @@ div#box1.boxes {
   border: 5px solid lightgray;
   border-radius: 10%;
   display: flex; /* flex photo and nameRole */
-  flex-basis: 30%; /*box 1 occupies 65% of the containing section1*/
+  flex-basis: 40%; /*box 1 occupies 40% of the containing section1*/
   width: 100%;
   /* margin: 20px; */
 }
