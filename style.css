@@ -119,7 +119,7 @@ img#photo {
   font-weight: bold;
 }
 .gridNameRole > div:nth-child(n + 2) {
-  font-size: 2em;
+  font-size: 1em;
   font-weight: normal;
   color: rgb(7, 132, 215);
 }
@@ -263,6 +263,15 @@ section2 must used width: 100% so it stays inside container23 when resizing.
 .gridCertItem {
   /* outline: 1px solid blue; */
   font-size: 22px;
+}
+
+.dataquest {
+  color: darkblue;
+}
+.dataquest:hover {
+Change text color on hover */
+  /* color: rgb(7, 132, 215) !important; */
+  transition: 150ms ease-in-out;
 }
 
 /* Portfolio */
