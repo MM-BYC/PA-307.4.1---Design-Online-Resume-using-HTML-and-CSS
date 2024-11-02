@@ -49,7 +49,7 @@ div#box2.boxes {
 /*contact grid*/
 .boxContact {
   font-family: "Calibri";
-  text-decoration: underline;
+  /* text-decoration: underline; */
   padding: 15px;
 }
 .gridContact {
@@ -142,9 +142,19 @@ img#photo {
   /* border: 5px solid magenta; */
 }
 .executiveSummary {
-  margin: 20px;
-  text-decoration: underline;
+  /* margin: 20px; */
+  /* text-decoration: underline; */
+  font-variant-caps: small-caps;
+
+
 }
+.typo-highlight
+{
+  font-size: 1.4em;
+font-family: Georgia, Times, 'Times New Roman', serif, serif;
+ }
+
+
 .summary {
   margin: 20px;
   font-family: "Calibri";
@@ -162,15 +172,20 @@ control the occupied space of section2 and section3 using flex: 1 1 xx%
   /* margin: 1em; */
   justify-content: space-between;
 }
+
 .mernFullStack,.python, .dataPlatformBuilder, 
 .generativeAI,.agilePM, .generalOpMgr, .licensedTax {
   /* margin: 20px; */ 
   font-style: italic;
 }
-.mernFullStack,.python,.education { text-decoration: underline; }
-.education {
-  margin:20px;
+
+.mernFullStack,.python  { 
+  text-decoration: underline; 
 }
+
+/* .education {
+  margin:20px;
+} */
 /* section2 is inside container section23 is using flex-wrap:wrap to wrap its children
 section2 must used width: 100% so it stays inside container23 when resizing.
 */
@@ -183,7 +198,7 @@ section2 must used width: 100% so it stays inside container23 when resizing.
 }
 
 #section3 {
-  margin: 20px;
+  /* margin: 20px; */
   /* border: 5px solid lightgray; */
   flex: 1 1 40%;
   background: white;
@@ -199,7 +214,8 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   margin: 20px;
   display: grid;
   box-sizing: border-box;
-  grid-template-columns: repeat(2, auto);
+  /* grid-template-columns: repeat(2, auto); */
+  grid-template-columns: 47% 53%;
   grid-template-rows: repeat(4, auto);
   gap: 10px;
 }
@@ -213,10 +229,10 @@ section2 must used width: 100% so it stays inside container23 when resizing.
 }
 
 /* skills*/
-.skills {
+/* .skills {
   margin: 20px;
   text-decoration: underline;
-}
+} */
 
 .gridTechSkills {
   margin: 20px;
@@ -252,10 +268,10 @@ section2 must used width: 100% so it stays inside container23 when resizing.
 }
 
 /* certifications , badges*/
-.certifications {
+/* .certifications {
   text-decoration: underline;
   margin: 20px;
-}
+} */
 .gridCert {
   margin: 20px;
 
@@ -270,7 +286,7 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   font-size: 22px;
 }
 
-.dataquest, .mongoDB {
+.dataquest, .mongoDB,.gridPortfolio {
   color: darkblue;
 }
 .dataquest:hover {
@@ -280,10 +296,10 @@ Change text color on hover */
 }
 
 /* Portfolio */
-.portfolios {
+/* .portfolios {
   margin: 20px;
   text-decoration: underline;
-}
+} */
 .gridPortfolio {
   margin: 20px;
   display: grid;
@@ -298,9 +314,9 @@ Change text color on hover */
 }
 
 /* Work experience */
-.workExperience {
+/* .workExperience {
   text-decoration: underline;
-}
+} */
 
 .gridWork {
   margin: 20px 0 0 0;
