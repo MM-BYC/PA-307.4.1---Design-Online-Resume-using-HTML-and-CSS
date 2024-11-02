@@ -162,7 +162,7 @@ control the occupied space of section2 and section3 using flex: 1 1 xx%
   /* margin: 1em; */
   justify-content: space-between;
 }
-.education {
+.education .python{
   margin: 20px;
   text-decoration: underline;
   font-style: italic;
