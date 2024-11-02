@@ -313,7 +313,7 @@ Change text color on hover */
   font-size: 22px;
 }
 .gridPortfolioItem>.capstone {
-  color: rgb(249, 24, 4)  !important
+  color: navy  !important
 }
 /* Work experience */
 /* .workExperience {
