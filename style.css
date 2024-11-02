@@ -312,7 +312,9 @@ Change text color on hover */
   /* outline: 1px solid blue; */
   font-size: 22px;
 }
-
+.gridPortfolioItem>.capstone {
+  color: rgb(249, 24, 4)  !important
+}
 /* Work experience */
 /* .workExperience {
   text-decoration: underline;
