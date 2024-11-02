@@ -168,7 +168,9 @@ control the occupied space of section2 and section3 using flex: 1 1 xx%
   font-style: italic;
 }
 .mernFullStack,.python,.education { text-decoration: underline; }
-
+.education {
+  margin:20px;
+}
 /* section2 is inside container section23 is using flex-wrap:wrap to wrap its children
 section2 must used width: 100% so it stays inside container23 when resizing.
 */
