@@ -286,7 +286,7 @@ section2 must used width: 100% so it stays inside container23 when resizing.
   font-size: 22px;
 }
 
-.dataquest, .mongoDB,.gridPortfolio {
+.dataquest, .mongoDB,.gridPortfolio, .sq {
   color: darkblue;
 }
 .dataquest:hover {
